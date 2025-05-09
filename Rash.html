@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yasiru Rashmika</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#8B4513',secondary:'#A67B5B'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body {
+font-family: 'Inter', sans-serif;
+background-color: #111827;
+}
+@page {
+size: A4;
+margin: 0;
+}
+@media print {
+body {
+background: none;
+}
+.profile-container {
+box-shadow: none !important;
+}
+}
+.a4-page {
+width: 210mm;
+min-height: 297mm;
+padding: 0;
+margin: 0 auto;
+background: #1F2937;
+border-radius: 20px;
+}
+.profile-container {
+background-color: #1F2937;
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+transition: all 0.3s ease;
+}
+.profile-image-container {
+background-color: #374151;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+overflow: hidden;
+margin: 0 auto;
+border: 4px solid #4B5563;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease;
+}
+.profile-image-container:hover {
+transform: scale(1.02);
+}
+.right-column {
+background-color: #374151;
+color: #F3F4F6;
+position: relative;
+overflow: hidden;
+}
+.table-container {
+border-collapse: separate;
+border-spacing: 0;
+width: 100%;
+background: rgba(75, 85, 99, 0.3);
+border-radius: 12px;
+overflow: hidden;
+margin: 1rem 0;
+}
+.table-container th,
+.table-container td {
+border: none;
+padding: 1rem 1.5rem;
+text-align: left;
+transition: background-color 0.2s ease;
+}
+.table-container tr {
+border-bottom: 1px solid rgba(156, 163, 175, 0.1);
+}
+.table-container tr:last-child {
+border-bottom: none;
+}
+.table-container tr:hover {
+background-color: rgba(75, 85, 99, 0.4);
+}
+.geometric-shape {
+position: absolute;
+background: linear-gradient(45deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+z-index: 0;
+animation: morphing 15s ease-in-out infinite;
+}
+@keyframes morphing {
+0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+.section-title {
+position: relative;
+display: inline-block;
+margin-bottom: 1.5rem;
+}
+.section-title::after {
+content: '';
+position: absolute;
+bottom: -8px;
+left: 0;
+width: 40px;
+height: 3px;
+background: #8B4513;
+border-radius: 2px;
+}
+.contact-item {
+transition: transform 0.2s ease;
+}
+.contact-item:hover {
+transform: translateX(8px);
+}
+.skill-tag {
+background: rgba(139, 69, 19, 0.2);
+padding: 0.5rem 1rem;
+border-radius: 9999px;
+font-size: 0.875rem;
+color: #F3F4F6;
+display: inline-block;
+margin: 0.25rem;
+border: 1px solid rgba(139, 69, 19, 0.3);
+transition: all 0.2s ease;
+}
+.skill-tag:hover {
+background: rgba(139, 69, 19, 0.3);
+transform: translateY(-2px);
+}
+</style>
+</head>
+<body class="p-4">
+<div class="a4-page">
+<div class="profile-container overflow-hidden flex flex-col md:flex-row rounded-xl">
+<!-- Left Column -->
+<div class="left-column w-full md:w-5/12 p-8 bg-gray-800 text-gray-200">
+<div class="profile-image-container mb-12">
+<img src="https://yasirurashmika.w3spaces-preview.com/Untitled_design.png">
+</div>
+<div class="mb-12">
+<h2 class="text-2xl font-bold text-primary section-title">Personal Profile</h2>
+<p class="text-gray-300 leading-relaxed">
+I am a 20 year old After A/L Student. I am a hard worker, honest and responsible person.
+</p>
+</div>
+<br>
+<br>
+<div class="mb-12">
+<h2 class="text-2xl font-bold text-primary section-title">Education Background</h2>
+<ul class="space-y-8 mt-6">
+<li class="text-gray-300">
+<p class="font-bold">Mahindha Rajapaksha College - Present</p>
+<p class="ml-4 mt-2">- Member of the ICT Association</p>
+</li>
+<li class="text-gray-300">
+<p class="font-bold">Yatiyana Maha Vidhyalaya</p>
+<p class="font-bold">2016 - 2021</p>
+<div class="ml-4 mt-2">
+<p>- A member of the Western Band</p>
+<p>- Environmental Pilot Member</p>
+<p>- A Prefect</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-12">
+<h2 class="text-2xl font-bold text-primary section-title">Language</h2>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="skill-tag">Sinhala</span>
+<span class="skill-tag">English</span>
+</div>
+</div>
+</div>
+<!-- Right Column -->
+<div class="right-column w-full md:w-7/12 p-6 relative overflow-hidden">
+<!-- Decorative geometric shapes -->
+<div class="geometric-shape w-32 h-32 rotate-45 bottom-0 right-0"></div>
+<div class="geometric-shape w-24 h-24 rotate-12 bottom-32 right-32"></div>
+<div class="relative z-10">
+<h1 class="text-3xl font-bold mb-1">Yasiru Rashmika</h1>
+<span class="inline-block bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm font-semibold mb-8 border-2 border-white">Student</span>
+<div class="mb-8">
+<h2 class="text-xl font-semibold mb-2">General Certificate of Education (Ordinary Level) Examination:</h2>
+<p class="mb-4">Index Number: 11583770</p>
+<table class="table-container mb-8">
+<tbody>
+<tr>
+<td>Buddhism</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Sinhala</td>
+<td>A</td>
+</tr>
+<tr>
+<td>English</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Mathematics</td>
+<td>A</td>
+</tr>
+<tr>
+<td>History</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Science</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Music</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Geography</td>
+<td>A</td>
+</tr>
+<tr>
+<td>ICT</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mb-12">
+<h2 class="text-xl font-semibold mb-2">General Certificate of Education (Advanced Level) Examination:</h2>
+<p class="mb-1">Index Number: 2057506  |  Technology Scheme</p>
+<table class="table-container">
+<tbody>
+<tr>
+<td>Engineering Technology</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Science For Technology</td>
+<td>A</td>
+</tr>
+<tr>
+<td>ICT</td>
+<td>B</td>
+</tr>
+<tr>
+<td>General English</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h2 class="text-2xl font-bold mb-6">Reach Me At</h2>
+<div class="flex items-start mb-4 contact-item">
+<div class="w-8 h-8 flex items-center justify-center mr-4 mt-1 bg-gray-700 rounded-lg">
+<i class="ri-map-pin-line text-white"></i>
+</div>
+<p class="text-gray-300">Ihalawaththa, Dewalamulla, Kirinda, Puhulwella</p>
+</div>
+<div class="flex items-start mb-4 contact-item">
+<div class="w-8 h-8 flex items-center justify-center mr-4 mt-1 bg-gray-700 rounded-lg">
+<i class="ri-phone-line text-white"></i>
+</div>
+<p class="text-gray-300">070 490 4030, 071 808 2115</p>
+</div>
+<div class="flex items-start contact-item">
+<div class="w-8 h-8 flex items-center justify-center mr-4 mt-1 bg-gray-700 rounded-lg">
+<i class="ri-mail-line text-white"></i>
+</div>
+<p class="text-gray-300">opyasirurashimika@gmail.com</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
